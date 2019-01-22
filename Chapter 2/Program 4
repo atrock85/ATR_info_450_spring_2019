@@ -1,0 +1,19 @@
+// This program converts gallons to liters using floating point numbers.
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    double gallons, liters;
+    
+    cout << "Enter number of gallons: ";
+    cin >> gallons; // This inputs from the user
+    
+    liters = gallons * 3.7854; // Converts to liters
+    
+    cout << "Liters: " << liters;
+    cout << "\n";
+    
+    return 0;
+}
