@@ -10,7 +10,7 @@ int main()
     
     while (value > 0){
     cout << "Your value squared is: " << value * value << endl;
-        if (!(value = 0))
+        if (value > 0)
         {
             cout << "Please enter another value: " << endl;
         cin >> value;
