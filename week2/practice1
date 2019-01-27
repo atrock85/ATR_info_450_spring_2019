@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+/* Write a program that continually accepts positive values from the user, 
+calculates the square of that value and outputs the results to the console. 
+When the user enters '0', execution should stop.
+ */
+int main()
+{
+    int value;
+    cout << "Please enter a value: " << endl;
+    cin >> value;
+    while (value > 0){
+    cout << "Your value squared is: " << value * value << endl;
+        break;
+    }
+    return 0;
+}
