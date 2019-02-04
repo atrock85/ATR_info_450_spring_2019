@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+
+const double pi = 3.14;
+double calculateCircumference(double radius);
+
+int main(){
+    
+    double radius;
+    
+    cout << "What is the radius of the circle: " << endl;
+    cout << "00 ends program" << endl;
+    cin >> radius;
+    if (radius == 00){
+        cout << "Goodbye" << endl;
+        return 0;
+    }
+    else{
+    cout << calculateCircumference(radius)<< " is the circumference of the circle." << endl;
+    cout << "\n";
+    return main();
+    }
+}
+
+double calculateCircumference (double radius){
+    
+    double circumference;
+    
+    circumference = 2 * pi * radius;
+    return circumference;
+}
