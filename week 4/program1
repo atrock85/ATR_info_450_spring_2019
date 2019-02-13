@@ -1,0 +1,26 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main(){
+    int integer_array[10] = {1,2,3,4,5,6,7,8,9,10}, i;
+    float sum = 0.0, average;
+    
+    for (i = 0; i < 10; i++){
+        
+        cout << "Original Numbers: " << integer_array[i] << endl;
+        sum += integer_array[i];
+    }
+    average = sum / i;
+    cout << "Average: " << average << endl;
+
+    for (i = 0; i < 10; i++){
+        integer_array[i] = (i - average);
+        integer_array[i] = pow (integer_array[i], 2);
+        cout << "New Number: " << integer_array[i] << endl;
+        sum += integer_array[i];
+    }
+    average = sum / i;
+    cout << "Average: " << average << endl;
+    cout << "End Result: " << pow (average, 2) << endl;
+}
